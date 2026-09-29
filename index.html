@@ -592,6 +592,9 @@ html[data-direction] .stars{color:var(--ink)}
 .kit__report{display:grid;gap:.5rem;font-size:var(--fs-small);min-width:0}
 .kit__report li{background:rgba(255,255,255,.09);border-radius:12px 12px 12px 3px;padding:.55rem .9rem;line-height:1.35}
 @media (max-width:560px){.kit{grid-template-columns:1fr}.kit__tile--wide{flex-direction:column;align-items:stretch}}
+/* шапка без телефона: меню стоит посередине между именем и кнопкой */
+.hdr__nav{margin-inline:auto}
+@media (max-width:980px){.hdr__in .btn{margin-left:auto}}
 /*/SITE*/
 </style>
 </head>
@@ -611,7 +614,6 @@ html[data-direction] .stars{color:var(--ink)}
     <nav class="hdr__nav" aria-label="Разделы">
       <a href="#zanyatiya">Занятия</a><a href="#o-sebe">Обо мне</a><a href="#ucheniki">Ученики</a><a href="#otzyvy">Отзывы</a><a href="#ceny">Цены</a><a href="#voprosy">Вопросы</a>
     </nav>
-    <a class="hdr__tel nums" href="tel:+79166188554">+7 916 618-85-54</a>
     <a class="btn btn--primary btn--sm" href="https://t.me/+79166188554" target="_blank" rel="noopener">Бесплатное занятие</a>
   </div>
 </header>
